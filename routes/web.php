@@ -16,7 +16,7 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [LoginController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/login',  [LoginController::class,'index'])->name('login')-> middleware('guest');
