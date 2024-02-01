@@ -1,6 +1,64 @@
 @extends('layouts.main')
 
 @section('container')
+<div class="mobileMenu hidden">
+
+    <ul class="mt-5 p-4">
+        <li>
+            <form class="mx-auto w-1/2 sm:flex flex-col items-center sm:block md:hidden lg:hidden xl:hidden">
+                <label for="default-search" class="mb-2 text-sm font-medium text-black-900 sr-only">Search</label>
+                <div class="flex items-center space-x-2 w-full md:w-1/2">
+                    <input type="search" id="default-search" class="flex-grow p-4 pl-10 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-gray-500" placeholder="Cari di Eco" required>
+                </div>
+            </form>
+            
+            
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-solid fa-house text-3xl items-center"></i>
+                Home
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-solid fa-circle-exclamation text-3xl items-center"></i>
+                About
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-solid fa-cart-shopping text-3xl items-center"></i>
+                Cart
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-regular fa-bell text-3xl items-center"></i>
+                Notification
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-regular fa-envelope text-3xl items-center"></i>
+                Message
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-regular fa-user text-3xl items-center"></i>
+                My profile
+            </a>
+        </li>
+        <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
+            <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                <i class="fa-solid fa-arrow-right-from-bracket text-3xl items-center"></i>
+                Sign Out
+            </a>
+        </li>
+    </ul>
+
+</div>
 
 <section id="home" class="pt-50 mt-20">
 
@@ -58,43 +116,48 @@
 
     {{-- Category --}}
     <div class="category px-10 text-center">
-        <h2 class="text-4xl mt-10 font-semibold">Kategori</h2>
-        <ul class="flex flex-wrap items-center justify-center text-gray-900 dark:text-white list-none">
+        
+        <h2 class="text-4xl dark:text-black mt-10 font-semibold text-center sm:text-3xl md:text-3xl lg:text-4xl lg:mx-auto md:mx-auto sm:mx-auto">
+            Kategori
+        </h2>
+               
+        <ul class="flex flex-wrap justify-center items-center text-gray-900 dark:text-white list-none md:ml-8 sm:ml-8">
             <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
-                    <i class="fa-solid fa-phone text-4xl"></i>
-                    <span class="ml-2">Order</span>
+                    <i class="fa-solid fa-phone text-4xl dark:text-black"></i>
+                    <span class="ml-2 dark:text-black">Order</span>
                 </a>
             </li>
-    
+        
+            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5 sm:ml-8" onclick="window.location.href='#';" style="cursor: pointer;">
+                <a href="#" class="flex items-center justify-center">
+                    <i class="fa-regular fa-calendar-days text-4xl dark:text-black"></i>
+                    <span class="ml-2 dark:text-black">Schedule</span>
+                </a>
+            </li>
+        
             <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
-                    <i class="fa-regular fa-calendar-days text-4xl"></i>
-                    <span class="ml-2">Schedule</span>
+                    <i class="fa-solid fa-location-dot text-4xl dark:text-black"></i>
+                    <span class="ml-2 dark:text-black">Tracking</span>
                 </a>
             </li>
-    
+        
             <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
-                    <i class="fa-solid fa-location-dot text-4xl"></i>
-                    <span class="ml-2">Tracking</span>
+                    <i class="fa-regular fa-comments text-4xl dark:text-black"></i>
+                    <span class="ml-2 dark:text-black">Support</span>
                 </a>
             </li>
-    
+        
             <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
-                <a href="#" class="flex items-center justify-center">
-                    <i class="fa-regular fa-comments text-4xl"></i>
-                    <span class="ml-2">Support</span>
-                </a>
-            </li>
-    
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
-                <a href="#" class="flex flex-col items-center justify-center h-full">
+                <a href="#" class="flex flex-col items-center justify-center h-full dark:text-black">
                     ECO+
                     {{-- logo --}}
                 </a>
             </li>
         </ul>
+        
     </div>
     
 
@@ -102,11 +165,11 @@
     {{-- content 2 --}}
     
 <div class="flex flex-wrap justify-center">
-    <div class="max-w-sm mt-20 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+    <div class="max-w-sm mt-20 p-6 bg-white border border-black-200 rounded-lg shadow dark:bg-white-800 dark:border-black-700 ">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere.</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black-900 dark:text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, facere.</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sed ad. In sit reiciendis neque temporibus officiis atque, animi enim impedit consectetur. Doloremque possimus eaque sint aperiam, dolores laudantium, dolore soluta placeat voluptatum illo est omnis fugit dolorum ipsum iusto reiciendis itaque laboriosam minima animi?</p>
+        <p class="mb-3 font-normal text-black-700 dark:text-black-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sed ad. In sit reiciendis neque temporibus officiis atque, animi enim impedit consectetur. Doloremque possimus eaque sint aperiam, dolores laudantium, dolore soluta placeat voluptatum illo est omnis fugit dolorum ipsum iusto reiciendis itaque laboriosam minima animi?</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -115,11 +178,11 @@
         </a>
     </div>
 
-    <div class="max-w-sm mt-20 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10">
+    <div class="max-w-sm mt-20 p-6 bg-white border border-black-200 rounded-lg shadow dark:bg-black-800 dark:border-black-700 ml-10">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae earum officiis ex quia deserunt!</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black-900 dark:text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae earum officiis ex quia deserunt!</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quod praesentium laudantium quaerat asperiores expedita rerum quam sed harum illo. Blanditiis error quas modi iste ullam possimus repellendus? Et qui ipsa commodi ullam consequuntur facere hic maxime exercitationem iste ratione?</p>
+        <p class="mb-3 font-normal text-black-700 dark:text-black-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quod praesentium laudantium quaerat asperiores expedita rerum quam sed harum illo. Blanditiis error quas modi iste ullam possimus repellendus? Et qui ipsa commodi ullam consequuntur facere hic maxime exercitationem iste ratione?</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -128,11 +191,11 @@
         </a>
     </div>
 
-    <div class="max-w-sm mt-20 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-10">
+    <div class="max-w-sm mt-20 p-6 bg-white border border-black-200 rounded-lg shadow dark:bg-white-800 dark:border-black-700 ml-10">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-black-900 dark:text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, molestiae repudiandae. Nesciunt quidem ut nobis molestiae, hic maiores facilis veritatis fuga obcaecati debitis, libero omnis totam iure fugiat aperiam deserunt.</p>
+        <p class="mb-3 font-normal text-black-700 dark:text-black-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, molestiae repudiandae. Nesciunt quidem ut nobis molestiae, hic maiores facilis veritatis fuga obcaecati debitis, libero omnis totam iure fugiat aperiam deserunt.</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -144,6 +207,6 @@
     
     
     
-       
+
 </section>
 @endsection

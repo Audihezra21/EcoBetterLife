@@ -28,7 +28,7 @@ class LoginController extends Controller
                 return redirect()->route('dashboard.content.index'); // Ganti 'dashboard' dengan nama rute yang sesuai
         }
 
-            return redirect()->intended('/');
+            return redirect()->intended('/home');
         }
 
         return back()->with('loginError', 'Login Failed!');
