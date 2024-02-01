@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/ad9856d319.js" crossorigin="anonymous"></script>
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -53,6 +52,21 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/ad9856d319.js" crossorigin="anonymous"></script>
+    <script>
+        function scrollToFooter() {
+            var footer = document.getElementById('footer');
+            footer.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        
+        const buttonToggle = document.querySelector('.buttonToggle');
+        const mobile = document.querySelector('.mobileMenu');
+
+        buttonToggle.addEventListener('click',function(){
+            mobile.classList.toggle('hidden');
+        });
+
+    </script>
        
     @yield ('script')
 
