@@ -30,15 +30,15 @@
                     </a>                    
                 </li>
                 <li>                    
-                    <a href="#">
+                    <a href="#" >
                         <i class="fa-regular fa-envelope text-3xl items-center"></i>
                     </a>                    
                 </li>
-                <li>
+                <li class="border-l-2 border-black pl-2">
                     @auth
                     <a href="#" class="nav-link dropdown-toggle" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
                         <div class="flex items-center space-x-2">
-                            <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full">
+                            <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full border border-black-800">
                             <span class="text-gray-800 hover:text-[#94B49F]">{{ auth()->user()->name }}</span>
                         </div>
                     </a>
