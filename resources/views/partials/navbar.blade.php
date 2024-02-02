@@ -7,8 +7,8 @@
                     <p class="sr-only">EcoBetterLife</p>
                 </a>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-5 xl:items-center xl:ml-auto ">
-                <input type="text" placeholder="Cari..." class="border p-2 rounded-3xl ml-auto xl:w-full mr:5">
+            <div class="md:flex md:items-center md:justify-center md:gap-5 xl:items-center xl:text-center  mr-auto">
+                <input type="text" placeholder="Search..." class="border p-2 rounded-3xl text-center ml-32 xl:w-full mr:5 px-64">
             </div>
             
             @if(auth()->check())
@@ -30,15 +30,15 @@
                     </a>                    
                 </li>
                 <li>                    
-                    <a href="#">
+                    <a href="#" >
                         <i class="fa-regular fa-envelope text-3xl items-center"></i>
                     </a>                    
                 </li>
-                <li>
+                <li class="border-l-2 border-black pl-2">
                     @auth
                     <a href="#" class="nav-link dropdown-toggle" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
                         <div class="flex items-center space-x-2">
-                            <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full">
+                            <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full border border-black-800">
                             <span class="text-gray-800 hover:text-[#94B49F]">{{ auth()->user()->name }}</span>
                         </div>
                     </a>
