@@ -1,90 +1,78 @@
-<nav id="navbar-sticky" class="bg-white justify-between border-gray-200 fixed top-0 w-full z-50 shadow">
-    <div class="flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/home" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <span class="self-center text-2xl font-semibold whitespace-nowrap p-4 ml-5 pl-10">Eco Better Life</span>
-        </a>
-        
-        @if(auth()->check())
-        <form class="hidden xl:block lg:block md:block mx-auto w-1/2 sm:flex flex-col items-end">
-            <label for="default-search" class="mb-2 text-sm font-medium text-black-900 sr-only">Search</label>
-            <div class="flex items-center space-x-2 w-full md:w-1/2">
-                <input type="search" id="default-search" class="flex-grow p-4 pl-10 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-gray-500 text-center" placeholder="Cari di Eco" required>
+<nav class="fixed inset-x-0 top-0 z-30 mx-auto w-full border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:w-4/5">
+    <div class="px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex shrink-0">
+                <a aria-current="page" class="flex items-center" href="/home">
+                    <img class="h-16 inline" src="img/LogoEco.png" alt="">
+                    <p class="sr-only">EcoBetterLife</p>
+                </a>
             </div>
-        </form>
-        
-        
-
-      
-                <ul class="lg:flex flex-col md:flex-row items-center gap-5 mt-4 md:mt-0 hidden">
-                    <li></li>
-                    <li>
-                        <a href="#footer" class="text-black-900 rounded text-xl md:hover:bg-transparent md:hover:text-black md:hover:underline md:p-0">Home</a>
-                    </li>
-                    <li>
-                        <a href="#footer" class="text-black-900 rounded text-xl md:hover:bg-transparent md:hover:text-black md:hover:underline md:p-0">About</a>
-                    </li>
-
-                    <li>                    
-                        <a href="#">
-                            <i class="fa-solid fa-cart-shopping text-3xl items-center"></i>
-                        </a>
-                    </li>
+            <div class="md:flex md:items-center md:justify-center md:gap-5 xl:items-center xl:ml-auto ">
+                <input type="text" placeholder="Cari..." class="border p-2 rounded-3xl ml-auto xl:w-full mr:5">
+            </div>
             
-                    <li>                    
-                        <a href="#">
-                            <i class="fa-regular fa-bell text-3xl items-center"></i>
-                        </a>                    
-                    </li>
-            
-                    <li>                    
-                        <a href="#">
-                            <i class="fa-regular fa-envelope text-3xl items-center"></i>
-                        </a>                    
-                    </li>
-
-                    <li>
-                        @auth
-                            <a href="#" class="nav-link dropdown-toggle" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
-                                <div class="flex items-center space-x-2">
-                                    <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full">
-                                    <span class="text-gray-800 hover:text-[#94B49F]">{{ auth()->user()->name }}</span>
-                                </div>
-                            </a>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                                    <li class="items-center">
-                                        <a href="/profile" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
-                                            <i class="fa-regular fa-user"></i>
-                                            My Profile
-                                        </a>
-                                    </li>
-                                    <li class="items-center">
-                                        @csrf
-                                        <form action="/logout" method="post" class="items-center">
-                                            @csrf                                            
-                                            <button type="submit" class="block px-2 py-2 hover:bg-gray-100 w-full text-left">
-                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                                                Sign out
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul>                         
-                            </div>       
-                            
-                        @else
-                            <a href="/login" class="nav-link {{$active === 'login' ? 'active' : '' }}">
-                                <button type="button" class="text-black bg-[#94B49F] hover:shadow-lg hover:opacity-95 transition duration-300 font-semibold rounded-full text-base px-5 py-2.5 text-center me-2 my-2 ">Login</button>
-                            </a>
-                        @endauth
-                    </li>             
-                </ul>
-                
-                <button class="text-3xl lg:hidden block buttonToggle">
-                            <i class="fa-solid fa-bars"></i>
-                        </button>
-
+            @if(auth()->check())
+            <ul class="lg:flex flex-col md:flex-row items-center gap-5 mt-4 md:mt-0 hidden ml-3">
+                <li>
+                    <a href="#footer" class="text-black-900 rounded text-xl md:hover:bg-transparent md:hover:text-black md:hover:underline md:p-0">Home</a>
+                </li>
+                <li>
+                    <a href="#footer" class="text-black-900 rounded text-xl md:hover:bg-transparent md:hover:text-black md:hover:underline md:p-0">About</a>
+                </li>
+                <li>                    
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping text-3xl items-center"></i>
+                    </a>
+                </li>
+                <li>                    
+                    <a href="#">
+                        <i class="fa-regular fa-bell text-3xl items-center"></i>
+                    </a>                    
+                </li>
+                <li>                    
+                    <a href="#">
+                        <i class="fa-regular fa-envelope text-3xl items-center"></i>
+                    </a>                    
+                </li>
+                <li>
+                    @auth
+                    <a href="#" class="nav-link dropdown-toggle" id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar">
+                        <div class="flex items-center space-x-2">
+                            <img src="{{ asset('img/profile.png') }}" alt="" class="w-10 h-10 rounded-full">
+                            <span class="text-gray-800 hover:text-[#94B49F]">{{ auth()->user()->name }}</span>
+                        </div>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                            <li class="items-center">
+                                <a href="/profile" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
+                                    <i class="fa-regular fa-user"></i>
+                                    My Profile
+                                </a>
+                            </li>
+                            <li class="items-center">
+                                <form action="/logout" method="post" class="items-center">
+                                    @csrf                                            
+                                    <button type="submit" class="block px-2 py-2 hover:bg-gray-100 w-full text-left">
+                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                        Sign out
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>                         
+                    </div>       
+                    @else
+                    <a href="/login" class="nav-link {{$active === 'login' ? 'active' : '' }}">
+                        <button type="button" class="text-black bg-[#94B49F] hover:shadow-lg hover:opacity-95 transition duration-300 font-semibold rounded-full text-base px-5 py-2.5 text-center me-2 my-2 ">Login</button>
+                    </a>
+                    @endauth
+                </li>             
+            </ul>
+            <button class="text-3xl lg:hidden block buttonToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         @endif
-    </div>
+    </div>    
+        </div>     
 </nav>
-

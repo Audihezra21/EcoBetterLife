@@ -1,19 +1,10 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="mobileMenu hidden">
+<div class="mobileMenu hidden border border-black-100 shadow mt-16">
 
     <ul class="mt-5 p-4">
-        <li>
-            <form class="mx-auto w-1/2 sm:flex flex-col items-center sm:block md:hidden lg:hidden xl:hidden">
-                <label for="default-search" class="mb-2 text-sm font-medium text-black-900 sr-only">Search</label>
-                <div class="flex items-center space-x-2 w-full md:w-1/2">
-                    <input type="search" id="default-search" class="flex-grow p-4 pl-10 text-md text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-gray-500" placeholder="Cari di Eco" required>
-                </div>
-            </form>
-            
-            
-        </li>
+
         <li class="items-center cursor-pointer font-bold hover-bg-black-400 ease-in duration-300">
             <a href="#" class="block px-2 py-2 hover:bg-gray-100 left-0 right-0">
                 <i class="fa-solid fa-house text-3xl items-center"></i>
@@ -115,42 +106,43 @@
 
 
     {{-- Category --}}
-    <div class="category px-10 text-center">
+    <div class="category px-10 text-center ">
         
         <h2 class="text-4xl dark:text-black mt-10 font-semibold text-center sm:text-3xl md:text-3xl lg:text-4xl lg:mx-auto md:mx-auto sm:mx-auto">
             Kategori
         </h2>
                
-        <ul class="flex flex-wrap justify-center items-center text-gray-900 dark:text-white list-none md:ml-8 sm:ml-8">
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
+        <ul class="flex flex-wrap justify-center items-center text-gray-900 dark:text-white list-none md:ml-8 sm:ml-8 gap-8">
+            
+            <li class="border border-black text-center p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
                     <i class="fa-solid fa-phone text-4xl dark:text-black"></i>
                     <span class="ml-2 dark:text-black">Order</span>
                 </a>
             </li>
         
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5 sm:ml-8" onclick="window.location.href='#';" style="cursor: pointer;">
+            <li class="border border-black text-center p-6 rounded-lg mt-5 " onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
                     <i class="fa-regular fa-calendar-days text-4xl dark:text-black"></i>
                     <span class="ml-2 dark:text-black">Schedule</span>
                 </a>
             </li>
         
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
+            <li class="border border-black text-center p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
                     <i class="fa-solid fa-location-dot text-4xl dark:text-black"></i>
                     <span class="ml-2 dark:text-black">Tracking</span>
                 </a>
             </li>
         
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
+            <li class="border border-black text-center p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex items-center justify-center">
                     <i class="fa-regular fa-comments text-4xl dark:text-black"></i>
                     <span class="ml-2 dark:text-black">Support</span>
                 </a>
             </li>
         
-            <li class="border border-black text-center mr-14 p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
+            <li class="border border-black text-center p-6 rounded-lg mt-5" onclick="window.location.href='#';" style="cursor: pointer;">
                 <a href="#" class="flex flex-col items-center justify-center h-full dark:text-black">
                     ECO+
                     {{-- logo --}}
