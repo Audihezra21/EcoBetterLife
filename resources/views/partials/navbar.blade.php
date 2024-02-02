@@ -7,8 +7,8 @@
                     <p class="sr-only">EcoBetterLife</p>
                 </a>
             </div>
-            <div class="md:flex md:items-center md:justify-center md:gap-5 xl:items-center xl:ml-auto ">
-                <input type="text" placeholder="Cari..." class="border p-2 rounded-3xl ml-auto xl:w-full mr:5">
+            <div class="md:flex md:items-center md:justify-center md:gap-5 xl:items-center xl:text-center  mr-auto">
+                <input type="text" placeholder="Search..." class="border p-2 rounded-3xl text-center ml-32 xl:w-full mr:5 px-64">
             </div>
             
             @if(auth()->check())

@@ -28,6 +28,30 @@
 
     <section class="flex justify-center items-center h-screen pt-16 relative">
         <div class="container flex flex-col lg:flex-row items-center max-w-screen-xl mx-auto">
+            @if (session()->has('Success'))
+            <div id="alert-3" class="fixed mt-32 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center justify-center p-4  rounded-lg bg-green-50 text-green-500 opacity-100 duration-700 ease-in-out" role="alert">
+                <div class="ms-3 text-sm font-medium">
+                    {{ session('Success') }}
+                </div>
+            </div>
+        
+            <script>
+                setTimeout(function() {
+                    document.getElementById('alert-3').style.opacity = '0';
+                }, 3000); // Mengatur waktu delay sebelum menghilangkan pesan (dalam milidetik)
+            </script>
+        @endif
+        
+        
+         
+        @if (session()->has('loginError'))
+        <div id="alert-2" class="fixed mt-32 top-0 left-1/2 transform -translate-x-1/2 duration-700 ease-in-out -translate-y-1/2 flex items-center justify-center p-4 text-red-800 rounded-lg bg-red-50 opacity-100" role="alert">
+            <div class="ms-3 text-sm font-medium duration-700 ease-in-out">
+                {{ session('loginError') }}
+            </div>
+        </div>
+        @endif
+        
             <nav id="navbar-sticky" class="bg-white border justify-between border-gray-200 fixed top-0 w-full z-50 shadow left-0 right-0">
                 <div class="flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="/home" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -158,6 +182,7 @@
             </div>
         </div>
     </section>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
