@@ -41,11 +41,6 @@
                                     <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
                                     <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
                                     </h2>
-                                    <div class="main-slider-two__btn-box">
-                                        <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                        <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                            now</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -66,11 +61,6 @@
                                     <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
                                     <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
                                     </h2>
-                                    <div class="main-slider-two__btn-box">
-                                        <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                        <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                            now</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -91,11 +81,7 @@
                                     <h4 class="main-slider-two__sub-title">Only Organic Products</h4>
                                     <h2 class="main-slider-two__title">Stay Healthy <span>&</span> <br> Eat Organic
                                     </h2>
-                                    <div class="main-slider-two__btn-box">
-                                        <a href="about.html" class="thm-btn main-slider-two__btn-one">Learn more</a>
-                                        <a href="product-details.html" class="thm-btn main-slider-two__btn-two">Shop
-                                            now</a>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -122,71 +108,66 @@
         </div>
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline">Checkout New Products</span>
-                <h2 class="section-title__title">Introdusing latest products</h2>
+                <span class="section-title__tagline">Checkout Our Category</span>
+                <h2 class="section-title__title">Category</h2>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <!--Categories Two Single Start-->
                 <div class="col-xl-2 col-lg-4 col-md-4">
                     <div class="categories-two__single" style="--accent-color: #9c72cc;">
                         <div class="categories-two__icon">
-                            <span class="icon-vegetable"></span>
+                            <span class="icon-phone-ringing"></span>
                         </div>
-                        <h3 class="categories-two__title"><a href="agriculture-services.html">Vegetables</a></h3>
+                        <h3 class="categories-two__title"><a href="agriculture-services.html">Order</a></h3>
                     </div>
                 </div>
                 <!--Categories Two Single End-->
+            
                 <!--Categories Two Single Start-->
                 <div class="col-xl-2 col-lg-4 col-md-4">
                     <div class="categories-two__single" style="--accent-color: #6cbc94;">
                         <div class="categories-two__icon categories-two__icon-2">
-                            <span class="icon-fruits"></span>
+                            <span class="icon-001-home"></span>
                         </div>
-                        <h3 class="categories-two__title"><a href="farming-products.html">Fresh fruits</a></h3>
+                        <h3 class="categories-two__title"><a href="farming-products.html">Schedule</a></h3>
                     </div>
                 </div>
                 <!--Categories Two Single End-->
+            
                 <!--Categories Two Single Start-->
                 <div class="col-xl-2 col-lg-4 col-md-4">
                     <div class="categories-two__single" style="--accent-color: #50a72c;">
                         <div class="categories-two__icon categories-two__icon-3">
-                            <span class="icon-cinnamon"></span>
+                            <span class="icon-fruits"></span>
                         </div>
-                        <h3 class="categories-two__title"><a href="organic-services.html">Spices</a></h3>
+                        <h3 class="categories-two__title"><a href="organic-services.html">Tracking</a></h3>
                     </div>
                 </div>
                 <!--Categories Two Single End-->
+            
                 <!--Categories Two Single Start-->
                 <div class="col-xl-2 col-lg-4 col-md-4">
                     <div class="categories-two__single" style="--accent-color: #d7a955;">
                         <div class="categories-two__icon categories-two__icon-4">
                             <span class="icon-walnut"></span>
                         </div>
-                        <h3 class="categories-two__title"><a href="delivery-services.html">Dry fruits</a></h3>
+                        <h3 class="categories-two__title"><a href="delivery-services.html">Support</a></h3>
                     </div>
                 </div>
                 <!--Categories Two Single End-->
+            
                 <!--Categories Two Single Start-->
                 <div class="col-xl-2 col-lg-4 col-md-4">
                     <div class="categories-two__single" style="--accent-color: #5580d7;">
                         <div class="categories-two__icon categories-two__icon-5">
                             <span class="icon-iced-coffee"></span>
                         </div>
-                        <h3 class="categories-two__title"><a href="agriculture-services.html">Beverages</a></h3>
-                    </div>
-                </div>
-                <!--Categories Two Single End-->
-                <!--Categories Two Single Start-->
-                <div class="col-xl-2 col-lg-4 col-md-4">
-                    <div class="categories-two__single" style="--accent-color: #dd637c;">
-                        <div class="categories-two__icon categories-two__icon-6">
-                            <span class="icon-chop"></span>
-                        </div>
-                        <h3 class="categories-two__title"><a href="delivery-services.html">Meat</a></h3>
+                        <h3 class="categories-two__title font-bold"><a href="agriculture-services.html">ECO+</a></h3>
                     </div>
                 </div>
                 <!--Categories Two Single End-->
             </div>
+            
         </div>
     </section>
     <!--Categories Two End-->
@@ -195,9 +176,8 @@
     <section class="news-two">
         <div class="container">
             <div class="section-title text-center">
-                <span class="section-title__tagline">From the Blog Posts</span>
-                <h2 class="section-title__title">Latest news updates
-                    <br> & articles</h2>
+                <span class="section-title__tagline">Blog News</span>
+                <h2 class="section-title__title">Latest News Updates
             </div>
             <div class="row">
                 <!--News One Single Start-->
@@ -205,7 +185,7 @@
                     <div class="news-one__single">
                         <div class="news-one__img-box">
                             <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-1.jpg" alt="">
+                                <img src="img\astronaut2.png" alt="">
                             </div>
                         </div>
                         <div class="news-one__content-box">
@@ -217,8 +197,7 @@
                                     <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
                                 </li>
                             </ul>
-                            <h3 class="news-one__title"><a href="news-details.html">Which healthy food growth
-                                    strategies required</a></h3>
+                            <h3 class="news-one__title"><a href="news-details.html">Lorem ipsum dolor sit amet.</a></h3>
                             <div class="news-one__bottom">
                                 <div class="news-one__read-more">
                                     <a href="news-details.html">Read More</a>
@@ -239,7 +218,7 @@
                     <div class="news-one__single">
                         <div class="news-one__img-box">
                             <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-2.jpg" alt="">
+                                <img src="img\astronaut2.png" alt="">
                             </div>
                         </div>
                         <div class="news-one__content-box">
@@ -251,8 +230,7 @@
                                     <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
                                 </li>
                             </ul>
-                            <h3 class="news-one__title"><a href="news-details.html">Donec aliquet blandit enim
-                                    feugiat Suspendisse</a></h3>
+                            <h3 class="news-one__title"><a href="news-details.html">Lorem ipsum dolor sit amet.</a></h3>
                             <div class="news-one__bottom">
                                 <div class="news-one__read-more">
                                     <a href="news-details.html">Read More</a>
@@ -273,7 +251,7 @@
                     <div class="news-one__single">
                         <div class="news-one__img-box">
                             <div class="news-one__img">
-                                <img src="assets/images/blog/news-1-3.jpg" alt="">
+                                <img src="img\astronaut2.png" alt="">
                             </div>
                         </div>
                         <div class="news-one__content-box">
@@ -285,8 +263,7 @@
                                     <a href="news-details.html"><i class="fas fa-user-circle"></i>by Admin</a>
                                 </li>
                             </ul>
-                            <h3 class="news-one__title"><a href="news-details.html">luctus sit amet eu nibh tempus
-                                    turpis.</a></h3>
+                            <h3 class="news-one__title"><a href="news-details.html">Lorem ipsum dolor sit amet.</a></h3>
                             <div class="news-one__bottom">
                                 <div class="news-one__read-more">
                                     <a href="news-details.html">Read More</a>
@@ -340,4 +317,7 @@
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 @endsection
