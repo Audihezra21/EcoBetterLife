@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     @vite('resources/css/app.css')
-    <title> Home Two || ogenix || ogenix HTML 5 Template </title>
+    <title> Eco Better Life </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicons/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets\images\favicons\Logo-Eco-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets\images\favicons\Logo-Eco-16x16.png') }}">
     <link  rel="manifest" href="{{ asset('assets/images/favicons/site.webmanifest') }}">
 
     <meta name="description" content="ogenix HTML 5 Template " />
@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/timepicker/timePicker.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendors/nice-select/nice-select.css') }}">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
 
 
     <!-- template styles -->
