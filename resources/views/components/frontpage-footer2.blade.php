@@ -9,7 +9,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                     <div class="footer-widget__column footer-widget__about">
                         <div class="footer-widget__logo">
-                            <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
+                            <a href="index.html"><img src="assets/images/resources/footer-logo-02.png" alt=""  width="250" height="100"></a>
                         </div>
                         <div class="footer-widget__about-text-box">
                             <p class="footer-widget__about-text">We’re Providing Everyday Fresh <br> and
@@ -45,8 +45,8 @@
                         <div class="footer-widget__title-box">
                             <h3 class="footer-widget__title">Contact</h3>
                         </div>
-                        <p class="footer-widget__contact-text">Valentin, Street Road 24, New York,
-                            USA - 67452</p>
+                        <p class="footer-widget__contact-text">Jl. Tamansari No. 6-8,
+                            Kota Bandung, Jawa Barat 4011</p>
                         <ul class="list-unstyled footer-widget__contact-list">
                             <li>
                                 <div class="text">
