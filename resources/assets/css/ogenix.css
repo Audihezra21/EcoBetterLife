@@ -25,7 +25,7 @@
   --ogenix-white-rgb: 255, 255, 255;
   --ogenix-base: #50a72c;
   --ogenix-base-rgb: 80, 167, 44;
-  --ogenix-black: #2a491d;
+  --ogenix-black: #498536;
   --ogenix-black-rgb: 42, 73, 29;
   --ogenix-primary: #ffbd3c;
   --ogenix-primary-rgb: 255, 189, 60;
@@ -1732,6 +1732,7 @@ ul {
 .main-menu-two__right {
   position: relative;
   display: block;
+
 }
 
 .main-menu-two__login {
@@ -1744,10 +1745,12 @@ ul {
   position: relative;
   display: flex;
   align-items: center;
+  
 }
 
 .main-menu-two__login li+li {
   margin-left: 13px;
+  
 }
 
 .main-menu-two__login li a {

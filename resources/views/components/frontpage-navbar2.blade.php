@@ -72,7 +72,7 @@
                     @else
                     <div class="main-menu-two__right p-3">
                         <ul class="list-unstyled main-menu-two__login">
-                            <li class="active "><a href="/login" class="bg-green-800 text-white w-24 text-center rounded">Login</a></li>
+                            <li class="active "><a href="/login" class="bg-green-500 text-white w-28 text-center rounded">LOGIN</a></li>
                         </ul>
                     </div>  
                 @endif      
