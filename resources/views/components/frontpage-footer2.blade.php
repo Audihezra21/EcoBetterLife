@@ -47,18 +47,6 @@
                         </div>
                         <p class="footer-widget__contact-text">Jl. Tamansari No. 6-8,
                             Kota Bandung, Jawa Barat 4011</p>
-                        <ul class="list-unstyled footer-widget__contact-list">
-                            <li>
-                                <div class="text">
-                                    <p><a href="tel:928800688960">+92 (8800) 68 - 8960</a></p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text">
-                                    <p><a href="mailto:info@example.com ">info@example.com</a></p>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
@@ -115,7 +103,7 @@
                 <div class="col-xl-12">
                     <div class="site-footer__bottom-inner">
                         <div class="site-footer__bottom-left">
-                            <p class="site-footer__bottom-text">© Copyright 2023 by <a href="#">Company.com</a>
+                            <p class="site-footer__bottom-text">© Copyright 2024 by <a href="#">Company.com</a>
                             </p>
                         </div>
                         <div class="site-footer__bottom-right">
